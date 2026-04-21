@@ -1,0 +1,38 @@
+# ─── Web Framework ────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.9      # for file uploads in FastAPI
+
+# ─── Config & Validation ──────────────────────────────────────────────────────
+pydantic==2.8.2
+pydantic-settings==2.4.0
+python-dotenv==1.0.1
+
+# ─── LLM – works for both Groq (FREE) and OpenAI ─────────────────────────────
+openai==1.45.0
+
+# ─── Voice – Speech to Text (local, no API key) ───────────────────────────────
+openai-whisper==20240930
+# Also run:  sudo apt install ffmpeg   (Linux)
+#        or: brew install ffmpeg       (Mac)
+#        or: choco install ffmpeg      (Windows)
+
+# ─── Voice – Text to Speech (free) ───────────────────────────────────────────
+gtts==2.5.3
+
+# ─── Document Processing ──────────────────────────────────────────────────────
+pymupdf==1.24.10
+
+# ─── Utilities ────────────────────────────────────────────────────────────────
+loguru==0.7.2
+tenacity==9.0.0
+aiofiles==24.1.0
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+pytest==8.3.2
+pytest-asyncio==0.23.8
+httpx==0.27.2
+
+# ─── Optional: persistent vector memory ──────────────────────────────────────
+# faiss-cpu==1.8.0           # uncomment for FAISS
+# chromadb==0.5.11           # uncomment for ChromaDB
